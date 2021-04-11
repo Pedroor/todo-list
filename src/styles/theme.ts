@@ -12,7 +12,7 @@ export default {
 
   textVariants: {
     title: {
-      fontSize: "17px",
+      fontSize: "22px",
       fontFamily: "Roboto_700Bold",
       lineHeight: "27px",
     },

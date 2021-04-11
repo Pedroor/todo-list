@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { useFonts } from "expo-font";
+import Routes from "./src/routes";
 
 import { ThemeProvider } from "styled-components";
 
@@ -24,10 +25,7 @@ export default function App() {
   if (!fontsLoaded) return null;
   return (
     <ThemeProvider theme={theme}>
-      <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </View>
+      <Routes />
     </ThemeProvider>
   );
 }
